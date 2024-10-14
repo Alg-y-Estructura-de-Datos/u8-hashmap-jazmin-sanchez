@@ -111,27 +111,8 @@ void HashMap<K, T>::remove(K clave) {
         tabla[pos] = NULL;  // Marcar la posición como vacía
     } else {
         throw 409; // Conflicto: la clave no coincide
-    }
+        }
 }
-
-//template <class K, class T>
-//void HashMap<K, T>::remove(K clave) {
-//    unsigned int pos = hashFuncP(clave) % tamanio;
-//
-//    // Recorre la tabla hash buscando la clave
-//    while (tabla[pos] != nullptr) {
-//        // Si se encuentra la clave, se elimina
-//        if (tabla[pos]->getClave() == clave) {
-//            delete tabla[pos]; // Libera la memoria de la entrada
-//            tabla[pos] = nullptr; // Marca la entrada como eliminada (estableciendo a NULL)
-//            return; // Salimos una vez eliminada
-//        }
-//        pos = (pos + 1) % tamanio; // Sondeo lineal
-//    }
-//
-//    throw 404; // Clave no encontrada
-//}
-
 
 template <class K, class T>
 bool HashMap<K, T>::esVacio()
