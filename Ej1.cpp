@@ -73,8 +73,17 @@ int main() {
             case 3:
                 cout << "Ingrese la palabra a eliminar: ";
                 cin >> palabra;
-                diccionario.remove(palabra);
-                cout << "Palabra eliminada correctamente (si existia).\n";
+                try{
+                    diccionario.remove(palabra);
+                    cout << "Palabra eliminada correctamente (si existia).\n";
+                }catch (int e) {
+                
+                    if (e == 404) {
+                        cout << "Palabra no encontrada.\n";
+                    } else {
+                        cout << "Error: Conflicto en la búsqueda.\n";
+                    }
+                }
                 break;
 
             case 4:
