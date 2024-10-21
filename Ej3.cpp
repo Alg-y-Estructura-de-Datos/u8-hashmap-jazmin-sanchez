@@ -1,3 +1,10 @@
+/*Crea un programa en C++ que gestione un sistema de almacenamiento de datos de estudiantes. El sistema debe permitir al usuario realizar las siguientes operaciones a través de un menú:
+•	Agregar un estudiante (clave: número de matrícula, valor: nombre del estudiante).
+•	Eliminar un estudiante usando su número de matrícula.
+•	Buscar a un estudiante por número de matrícula.
+•	Mostrar la lista completa de estudiantes organizados en sus "buckets" del mapa hash.
+•	Verificar si el sistema está vacío.
+*/
 #include <iostream>
 #include "HashMap/HashMapList.h"
 

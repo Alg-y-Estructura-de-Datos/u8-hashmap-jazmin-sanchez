@@ -1,3 +1,11 @@
+/*Sistema de votaciones. Crear un sistema de votaciones donde cada votante tiene un número de identificación y vota por un candidato.
+La clave será el número de identificación del votante y el valor será el nombre del candidato por el que ha votado.
+Implementa funciones para:
+•	Registrar un voto.
+•	Verificar por quién votó una persona (buscando por su ID).
+•	Eliminar un voto si fue incorrecto.
+•	Imprimir todos los votos registrados.
+*/
 #include <iostream>
 #include "HashMap/HashMapList.h"
 
